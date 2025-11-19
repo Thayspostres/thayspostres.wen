@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO BÁSICO -->
+  <title>thayspostres Navojoa</title>
+
+  <meta name="description"
+    content="Thays Postres: galletas rellenas, pasteles personalizados y postres artesanales en Navojoa, Sonora. Pedidos por WhatsApp y redes sociales.">
+  <meta name="keywords" content="thays postres, galletas rellenas, pasteles, postres, navojoa, repostería artesanal">
+  <meta name="author" content="Thays Postres">
+
+  <link rel="canonical" href="https://thayspostres.github.io/thayspostres.wen/">
+
+  <!-- OPEN GRAPH (Facebook, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thays Postres">
+  <meta property="og:title" content="Thays Postres - Galletas y pasteles artesanales en Navojoa">
+  <meta property="og:description"
+    content="Galletas rellenas, pasteles personalizados y repostería artesanal en Navojoa, Sonora.">
+  <meta property="og:url" content="https://thayspostres.github.io/thayspostres.wen/">
+  <meta property="og:image" content="https://thayspostres.github.io/thayspostres.wen/img/banner1.jpg">
+
+
+  <!-- ESTILOS CSS EXTERNO SI LO USAS -->
+  <link rel="stylesheet" href="headerstyle.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- LIGHTBOX PARA GALERÍA -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+
+  <style>
+    /* ******************************** */
+    /*          SECCIÓN UBICACIÓN       */
+    /* ******************************** */
+    .map-section {
+      background: #f7edf7;
+      padding: 3rem 1.5rem 4rem;
+      margin-top: 2rem;
+    }
+
+    .map-wrapper {
+      max-width: 120rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 2fr;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .map-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #2b2118;
+    }
+
+    .map-text p {
+      font-size: 1.4rem;
+      margin-bottom: .4rem;
+      color: #4b3a2b;
+    }
+
+    .map-text a {
+      color: #e1306c;
+      text-decoration: none;
+    }
+
+    .map-text a:hover {
+      text-decoration: underline;
+    }
+
+    .map-card {
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+      padding: 1rem;
+    }
+
+    .map-card iframe {
+      width: 100%;
+      height: 280px;
+      border: 0;
+      border-radius: 1rem;
+    }
+
+    /* ******************************** */
+    /*              FOOTER              */
+    /* ******************************** */
+    .footer {
+      background: #111;
+      color: #ddd;
+      padding: 1.4rem 1.5rem;
+      margin-top: 0;
+    }
+
+    .footer-row {
+      max-width: 120rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .footer-row small {
+      opacity: .8;
+    }
+
+    .footer-mini-social {
+      display: flex;
+      gap: .7rem;
+    }
+
+    .footer-mini-social a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f3b4ff;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+
+    .footer-mini-social a:hover {
+      background: #333;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --primary-color: #030300;
+      --background-color: #e6dae5dc;
+      --dark-color: #ff3bc4;
+    }
+
+    html {
+      font-size: 62.5%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--dark-color);
+    }
+
+    /* ********************************** */
+    /*             UTILIDADES             */
+    /* ********************************** */
+    .container {
+      max-width: 120rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .heading-1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #2b2118;
+    }
+
+    /* ********************************** */
+    /*               HEADER               */
+    /* ********************************** */
+    .container-hero {
+      background-color: #f2ebe5;
+      border-bottom: 1px solid #e1d4c6;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 0;
+      gap: 2rem;
+    }
+
+    .customer-support {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+      color: #06010e;
+    }
+
+    .customer-support i {
+      font-size: 3rem;
+      color: var(--primary-color);
+    }
+
+    .content-customer-support {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .container-logo {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .container-logo i {
+      font-size: 3rem;
+      color: var(--primary-color);
+    }
+
+    .container-logo h1 a {
+      text-decoration: none;
+      color: #0de884;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    .container-user {
+      display: flex;
+      gap: 1rem;
+      cursor: pointer;
+      align-items: center;
+      font-size: 1.2rem;
+      color: #4b3a2b;
+    }
+
+    .container-user .fa-user {
+      font-size: 2.6rem;
+      color: var(--primary-color);
+      padding-right: 2rem;
+      border-right: 1px solid #e2e2e2;
+    }
+
+    .container-user .fa-basket-shopping {
+      font-size: 2.6rem;
+      color: var(--primary-color);
+      padding-left: 1rem;
+    }
+
+    .content-shopping-cart {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    /***************NAVBAR*********/
+    .container-navbar {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .7rem 0;
+    }
+
+    .navbar .fa-bars {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .menu li {
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: var(--dark-color);
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 1rem;
+    }
+
+    .menu a::after {
+      content: '';
+      width: 1.8rem;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      opacity: 0;
+      transition: all .3s ease;
+      border-radius: 999px;
+    }
+
+    .menu a:hover::after {
+      opacity: 1;
+    }
+
+    .menu a:hover {
+      color: #fff;
+    }
+
+    .search-form {
+      position: relative;
+      display: flex;
+      margin: .5rem;
+      align-items: center;
+      border: 2px solid #fff;
+      border-radius: 2rem;
+      background-color: #fff;
+      height: 4.4rem;
+      overflow: hidden;
+    }
+
+    .search-form input {
+      outline: none;
+      font-family: inherit;
+      border: none;
+      width: 25rem;
+      font-size: 1.4rem;
+      padding: 0 2rem;
+      color: #362d2d;
+    }
+
+    .search-form input::-webkit-search-cancel-button {
+      appearance: none;
+    }
+
+    .search-form .btn-search {
+      border: none;
+      background-color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 1rem 1.4rem;
+      cursor: pointer;
+    }
+
+    .btn-search i {
+      font-size: 2rem;
+      color: #5f7740;
+      transition: .2s;
+    }
+
+    .btn-search:hover i {
+      font-size: 2.2rem;
+      color: #1200ff;
+    }
+
+    /* ********************************** */
+    /*          BANNER SECTION            */
+    /* ********************************** */
+    .banner {
+      background-image: linear-gradient(100deg, #000000a9, #00000059),
+        url("img/banner1.jpg");
+      height: 35rem;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+
+
+    .content-banner {
+      max-width: 90rem;
+      margin: 0 auto;
+      padding: 5rem 0;
+    }
+
+    .content-banner p {
+      color: var(--primary-color);
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .content-banner h2 {
+      color: hsl(0, 0%, 100%);
+      font-size: 3.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-banner img {
+      width: 15rem;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-banner a {
+      text-decoration: none;
+      color: #fdfdfd;
+      background-color: var(--primary-color);
+      display: inline-block;
+      padding: 1rem 3.5rem;
+      text-transform: uppercase;
+      border-radius: 999px;
+      font-size: 1.4rem;
+      letter-spacing: .05em;
+      transition: background .2s, transform .15s;
+    }
+
+    .content-banner a:hover {
+      background-color: #9c4906b4;
+      transform: translateY(-5px);
+    }
+
+    /* ********************************** */
+    /*          MAIN CONTENT              */
+    /* ********************************** */
+
+    .main-content {
+      background-color: var(--background-color);
+      padding-bottom: 4rem;
+    }
+
+    /* ___CARACTERISTICAS - FEATURE_____ */
+
+    .container-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      padding: 3rem 0;
+    }
+
+    .card-feature {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #141a1b;
+      border-radius: 1.5rem;
+      padding: 1.7rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+    }
+
+    .card-feature i {
+      font-size: 2.7rem;
+      color: var(--primary-color);
+    }
+
+    .feature-content {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+
+    .feature-content span {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--dark-color);
+    }
+
+    .feature-content p {
+      color: #b3aaaa;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    /* ___CATEGORIES_____ */
+    .top-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .container-categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+
+    .card-category {
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      gap: 2rem;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+    }
+
+    .category-moca {
+      background-image: linear-gradient(#e7141410, #00000080), url("img/cat2.png");
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+
+    .category-expreso {
+      background-image: linear-gradient(#00000010, #00000080), url("img/cat3.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .category-capuchino {
+      background-image: linear-gradient(#00000010, #00000080), url("img/cat1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .card-category p {
+      font-size: 2.5rem;
+      color: #fff;
+      text-transform: capitalize;
+      position: relative;
+    }
+
+    .card-category p::after {
+      content: '';
+      width: 2.5rem;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card-category span,
+    .card-category samp {
+      font-size: 1.6rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .card-category span:hover,
+    .card-category samp:hover {
+      color: #ffe5ff;
+    }
+
+    /* ******************************** */
+    /*           TOP PRODUCTS           */
+    /* ******************************** */
+    .top-products {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container-options {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container-options span {
+      color: #777;
+      background-color: #fff;
+      padding: 1rem 3rem;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      border-radius: 2rem;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .05);
+      transition: .2s;
+    }
+
+    .container-options span:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    .container-options span.active {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    /* ___PRODUCTS_____ */
+    .container-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 2rem;
+    }
+
+    .card-product {
+      background-color: #fff;
+      padding: 2rem 3rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+      position: relative;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .card-product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .container-img {
+      position: relative;
+    }
+
+    .container-img img {
+      width: 100%;
+      border-radius: 1.5rem;
+    }
+
+    .container-img .discount {
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 2px 1.2rem;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 1rem;
+      right: -3rem;
+      z-index: -1;
+      transition: all .4s ease;
+    }
+
+    .button-group span {
+      border: 1px solid var(--primary-color);
+      padding: .8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: #fff;
+      transition: all .4s ease;
+    }
+
+    .button-group span:hover {
+      background-color: #030110cf;
+    }
+
+    .button-group span i {
+      font-size: 1.7rem;
+      color: var(--primary-color);
+      transition: .2s;
+    }
+
+    .button-group span:hover i {
+      color: #38f205;
+      font-size: 2rem;
+    }
+
+    .card-product:hover .button-group {
+      z-index: 0;
+      right: -1rem;
+    }
+
+    .content-card-product {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, min-content);
+      row-gap: 1rem;
+      margin-top: 1.3rem;
+    }
+
+    .stars {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1;
+    }
+
+    .stars i {
+      font-size: 1.3rem;
+      color: rgba(205, 195, 6, 0.9);
+    }
+
+    .content-card-product h3 {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin: .5rem 0 0.7rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .content-card-product h3:hover {
+      color: violet;
+    }
+
+    .add-cart {
+      justify-self: start;
+      border: 2px solid var(--primary-color);
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .add-cart i {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      transition: .2s;
+    }
+
+    .add-cart:hover {
+      background-color: #c1f7f7;
+    }
+
+    .add-cart:hover i {
+      color: #4beb0c;
+    }
+
+    .content-card-product .price {
+      justify-self: end;
+      align-self: center;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    .content-card-product .price span {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-decoration: line-through;
+      color: #777;
+      margin-left: .5rem;
+    }
+
+    /* ******************************** */
+    /*           GALLERY                */
+    /* ******************************** */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 30rem);
+      gap: 1.5rem;
+      margin: 3rem auto;
+      max-width: 120rem;
+      padding: 0 1.5rem;
+    }
+
+    .gallery a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+    }
+
+    .gallery-img-3 {
+      grid-column: 2 / 4;
+      grid-row: 1 / 3;
+    }
+
+    /* ******************************** */
+    /*        SOCIAL / REDES            */
+    /* ******************************** */
+
+    .social-feeds {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+
+    .social-column h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #2b2118;
+    }
+
+    .social-column p {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #4b3a2b;
+    }
+
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      text-decoration: none;
+      background: #e1306c;
+      color: #fff;
+      padding: .8rem 1.6rem;
+      border-radius: 999px;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    .btn-instagram i {
+      font-size: 1.6rem;
+    }
+
+    .btn-instagram:hover {
+      opacity: .9;
+    }
+
+    /* ******************************** */
+    /*     BOTÓN FLOTANTE WHATSAPP      */
+    /* ******************************** */
+
+    .whatsapp-float {
+      position: fixed;
+      width: 52px;
+      height: 52px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 2.6rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #8af104;
+    }
+
+    /* ******************************** */
+    /*           RESPONSIVE             */
+    /* ******************************** */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .container-features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .container-categories {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .gallery-img-3 {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .social-feeds {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .search-form input {
+        width: 18rem;
+      }
+
+      .container-features {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ********************************** -->
+  <!--               HEADER               -->
+  <!-- ********************************** -->
+  <header>
+
+    <div class="container-hero">
+      <div class="container hero">
+
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i>
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">664-375-0913</span>
+            <span class="link">www.idappsh.com</span>
+            <span class="link">innovation and development of hybrid systems</span>
+          </div>
+        </div>
+
+        <!-- LOGO -->
+        <div class="container-logo">
+          <i class="fa-solid fa-cake-candles"></i>
+          <h1 class="logo"><a href="/">ThaysPostres</a></h1>
+        </div>
+
+        <!-- CARRITO -->
+        <div class="container-user">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-basket-shopping"></i>
+          <div class="content-shopping-cart">
+            <samp class="text">Carrito</samp>
+            <samp class="number">art.(0)</samp>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/pruductos.html">Prodcutos</a></li>
+          <li><a href="pages/categorias.html">Categorias</a></li>
+          <li><a href="pages/novedades.html">Novedades</a></li>
+          <li><a href="pages/comprar.html">Compras</a></li>
+          <li><a href="#">Más</a></li>
+        </ul>
+
+        <!-- BUSCADOR -->
+        <form class="search-form">
+          <input type="search" placeholder="Buscar.." />
+          <button class="btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ********************************** -->
+  <!--           BANNER SECTION           -->
+  <!-- ********************************** -->
+  <section class="banner">
+    <div class="content-banner">
+      <p>Deliciosos</p>
+      <h2>100% Originales<br>Producto Fresco</h2>
+      <img src="img/logo1-1.png" alt="Thays Postres">
+      <a href="pages/compras.html">Comprar ahora</a>
+    </div>
+  </section>
+
+  <!-- ********************************** -->
+  <!--             MAIN CONTENT           -->
+  <!-- ********************************** -->
+  <main class="main-content">
+
+    <!-- FEATURES -->
+    <section class="container container-features">
+      <div class="card-feature">
+        <i class="fa-solid fa-plane-up"></i>
+        <div class="feature-content">
+          <span>Envío gratis 24/7</span>
+          <p>Llamadas al 642 161 0757</p>
+        </div>
+      </div>
+
+      <div class="card-feature">
+        <i class="fa-solid fa-wallet"></i>
+        <div class="feature-content">
+          <span>Contra reembolso</span>
+          <p>No solicitamos pagos por adelantado</p>
+        </div>
+      </div>
+
+      <div class="card-feature">
+        <i class="fa-solid fa-gift"></i>
+        <div class="feature-content">
+          <span>Tarjeta de regalo</span>
+          <p>Ofrecemos descuentos especiales</p>
+        </div>
+      </div>
+
+      <div class="card-feature">
+        <i class="fa-solid fa-headset"></i>
+        <div class="feature-content">
+          <span>Servicio al cliente</span>
+          <p>Online, a solo un click</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="container top-categories">
+      <h1 class="heading-1">Mejores categorías</h1>
+      <div class="container-categories">
+        <div class="card-category category-moca">
+          <p>Café Moca</p>
+          <samp>Ver más</samp>
+        </div>
+
+        <div class="card-category category-expreso">
+          <p>Expreso</p>
+          <samp>Ver más</samp>
+        </div>
+
+        <div class="card-category category-capuchino">
+          <p>Personal</p>
+          <samp>Ver más</samp>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="container top-products">
+      <h1 class="heading-1">Mejores productos</h1>
+
+      <div class="container-options">
+        <span class="active">Destacados</span>
+        <span>Más Recientes</span>
+        <span>Más Vendidos</span>
+      </div>
+
+      <div class="container-products">
+        <!-- PRODUCTO 1 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/im1.jpg" alt="Top Imagen 1">
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>"Top Imagen-1"</h3>
+            <samp class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </samp>
+            <p class="price">$217.50 <span>$250.00</span></p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/im2.jpg" alt="Top Imagen 2">
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>"Top Imagen-1"</h3>
+            <samp class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </samp>
+            <p class="price">$150.00 <span>$169.50</span></p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/im3.jpg" alt="Top Imagen 3">
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>"Top Imagen-1"</h3>
+            <samp class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </samp>
+            <p class="price">$215.00 <span>$244.95</span></p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/im4.jpg" alt="Top Imagen 4">
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>"Top Imagen-1"</h3>
+            <samp class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </samp>
+            <p class="price">$215.00 <span>$244.95</span></p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 5 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/im5.jpg" alt="Top Imagen 5">
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>"Top Imagen-1"</h3>
+            <samp class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </samp>
+            <p class="price">$215.00 <span>$244.95</span></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- GALERÍA CON LIGHTBOX -->
+    <section class="gallery">
+      <a href="img/gallery/1.jpg" class="glightbox" data-gallery="galeria-thays">
+        <img src="img/gallery/1.jpg" alt="img-galeria1" class="gallery-img-1" />
+      </a>
+      <a href="img/gallery/2.jpg" class="glightbox" data-gallery="galeria-thays">
+        <img src="img/gallery/2.jpg" alt="img-galeria2" class="gallery-img-2" />
+      </a>
+      <a href="img/gallery/3.jpg" class="glightbox" data-gallery="galeria-thays">
+        <img src="img/gallery/3.jpg" alt="img-galeria3" class="gallery-img-3" />
+      </a>
+      <a href="img/gallery/4.jpg" class="glightbox" data-gallery="galeria-thays">
+        <img src="img/gallery/4.jpg" alt="img-galeria4" class="gallery-img-4" />
+      </a>
+      <a href="img/gallery/5.jpg" class="glightbox" data-gallery="galeria-thays">
+        <img src="img/gallery/5.jpg" alt="img-galeria5" class="gallery-img-5" />
+      </a>
+    </section>
+
+    <!-- REDES SOCIALES -->
+    <section class="container social-feeds">
+      <div class="social-column">
+        <h2>Lo más reciente en Facebook</h2>
+        <p>Todo lo que se publique en la página de Facebook <strong>thayspostres</strong> se actualiza aquí
+          automáticamente.</p>
+
+        <!-- PAGE PLUGIN DE FACEBOOK -->
+        <div class="fb-page" data-href="https://www.facebook.com/thayspostres" data-tabs="timeline" data-width="500"
+          data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+        </div>
+      </div>
+
+      <div class="social-column">
+        <h2>Instagram</h2>
+        <p>Síguenos en Instagram para ver galletas, pasteles y promos nuevas.</p>
+        <a class="btn-instagram" href="https://www.instagram.com/thayspostres" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          @thayspostres
+        </a>
+        <!--
+          Si luego usas un widget tipo SnapWidget o LightWidget,
+          pega aquí el <iframe> que te den y se actualizará solo.
+        -->
+      </div>
+    </section>
+
+    <!-- UBICACIÓN / MAPA -->
+    <section class="map-section">
+      <div class="map-wrapper">
+        <div class="map-text">
+          <h2>📍 Ubicación</h2>
+          <p><strong>Thays Postres</strong></p>
+          <p>C. Eucalipto 503, Mocuzarit, 85850 Navojoa, Sonora.</p>
+          <p>Retiro en puerta · Entrega sin contacto · Consumo en el lugar.</p>
+          <p style="margin-top:1rem;">
+            <a href="https://maps.app.goo.gl/XX5qV8bAA9e1J3Wc9" target="_blank" rel="noopener">
+              Ver ubicación en Google Maps
+            </a>
+          </p>
+
+        </div>
+        <!-- BOTÓN FLOTANTE WHATSAPP -->
+        <a href="https://wa.me/526421610757?text=Hola%20me%20interesan%20tus%20postres%20🍪" class="whatsapp-float"
+          target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.215125863497!2d-109.42732869999999!3d27.086512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaeb1b7c98670414f%3A0xd6a71272404a5cf8!2sThayspostres!5e0!3m2!1ses!2smx!4v1763560684571!5m2!1ses!2smx"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <small>© 2025 Thays Postres. Todos los derechos reservados.</small>
+      <small>Desarrollado por <strong>IDAPPSH Systems
+          "Innovation and Development of Hybrid Systems and Applications"
+        </strong></small>
+
+      <div class="footer-mini-social">
+        <a href="https://www.facebook.com/thayspostres" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/thayspostres" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/526421610757?text=Hola%20me%20interesan%20tus%20postres%20🍪" target="_blank"
+          rel="noopener" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- LIGHTBOX INIT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      GLightbox({
+        selector: '.glightbox'
+      });
+    });
+  </script>
+
+  <!-- FACEBOOK CHAT + SDK (sirve para chat y page plugin) -->
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0"></script>
+
+  <div class="fb-page" data-href="https://www.facebook.com/thayspostres" data-tabs="timeline" data-width="380"
+    data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+    data-show-facepile="true">
+  </div>
+
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    // Si consigues el ID numérico de la página, cámbialo aquí:
+    chatbox.setAttribute("page_id", "thayspostres");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+</body>
+
+</html>
